@@ -7,16 +7,15 @@ public class GazeReactionController : MonoBehaviour
     [SerializeField] GazeInputController _gazeInputController;
     [SerializeField] GameObject _objectToManipulate;
     [SerializeField] float _verticalScale = 1f;
-    [SerializeField] float _horizontalScale = 1f;
-    [SerializeField] float _horizontalPositionLimit = 10f;
-    [SerializeField] float _verticalPositionLimit = 5f;
-    [SerializeField] float _moveSpeed = 10f;
-    [SerializeField] float _movementActivationMinimumDistance = 3f;
+    [SerializeField] float _horizontalScale = 1f; 
     [SerializeField] bool _invertAxisX = false;
     [SerializeField] bool _invertAxisY = false;
     [SerializeField] UnityEngine.UI.Text _text;
     [SerializeField] GameObject _gazePointingProp;
-    [SerializeField] float _offset = 10f;
+    [SerializeField] float _horizontalAngleDeltaThreshold = 10f;
+    [SerializeField] float _verticalAngleDeltaThreshold = 2f;
+    [SerializeField] float _rotationSpeed = 20f;
+    [SerializeField] Vector2 _screenLimitsInWorldPosition;
 
 
     private void Start()
@@ -30,26 +29,49 @@ public class GazeReactionController : MonoBehaviour
         StartCoroutine(OnGazeDetected());
     }
 
-    private float a = 0f;
-    private float b = 0f; 
+    [SerializeField] float _activationDistance = 1f;
+    Quaternion _targetRotation;
+    private float _angleDelta;
+
+
+    Vector2 _lookingAngleLimits;
 
     private IEnumerator OnGazeDetected()
-    {
+    { 
+        _lookingAngleLimits = new Vector2(_gazeInputController.HorizontalLookAtLimit, _gazeInputController.VerticalLookAtLimit);
+
+        _horizontalScale = _screenLimitsInWorldPosition.y / _lookingAngleLimits.y;
+        _verticalScale = _screenLimitsInWorldPosition.x / _lookingAngleLimits.x;
+
         while (true)
         {
             if (_gazeInputController == null || _objectToManipulate == null)
                 yield break;
-       
-            _objectToManipulate.transform.localRotation = Quaternion.AngleAxis(-_gazeInputController.CurrentHorizontalValue, Vector3.up) * Quaternion.AngleAxis(-_gazeInputController.CurrentVerticalValue, Vector3.right);
-               
-            a = _gazeInputController.CurrentHorizontalValue;
-            b = _gazeInputController.CurrentVerticalValue;
 
+            /*  _targetRotation = Quaternion.Euler(Mathf.Round(_gazeInputController.CurrentVerticalValue * _verticalScale), Mathf.Round(_gazeInputController.CurrentHorizontalValue * _horizontalScale), 0f);
 
-            yield return new WaitWhile(() => Mathf.Abs(_gazeInputController.CurrentHorizontalValue - a) < _offset || Mathf.Abs(_gazeInputController.CurrentVerticalValue - b) < _offset);
+              _angleDelta = Quaternion.Angle(_objectToManipulate.transform.rotation, _targetRotation);
+              if (_angleDelta < _activationDistance)
+              { 
+                  _text.text = "NE BI SE TREBAO VRTITI!";
 
+                  _angleDelta = Mathf.Abs(_objectToManipulate.transform.rotation.x - _targetRotation.x);
+                  if (Mathf.Abs(_angleDelta) < _verticalAngleDeltaThreshold)
+                      _targetRotation.x = Mathf.Round(_objectToManipulate.transform.eulerAngles.x);
+
+                  _angleDelta = Mathf.Abs(_objectToManipulate.transform.rotation.y - _targetRotation.y);
+                  if (Mathf.Abs(_angleDelta) < _horizontalAngleDeltaThreshold)
+                      _targetRotation.y = Mathf.Round(_objectToManipulate.transform.eulerAngles.y);
+              }
+              else
+              {
+                  _objectToManipulate.transform.rotation = Quaternion.RotateTowards(_objectToManipulate.transform.rotation, _targetRotation, _rotationSpeed * Time.deltaTime);
+                  _text.text = "SAD BI SE TREBAO VRTITI!";
+              }*/
+
+            _gazePointingProp.transform.position = new Vector3(_gazeInputController.CurrentHorizontalValue * _horizontalScale, -_gazeInputController.CurrentVerticalValue * _verticalScale + 3f, -10f);
             yield return null;
-        }
+        } 
     }
 
   /*  private IEnumerator MoveRoutine()

@@ -12,8 +12,7 @@ public class GazeInputController : MonoBehaviour
     [SerializeField] float _verticalLookAtScale;
     [SerializeField] float _verticalLookAtLimit;
     [SerializeField] float _currentHorizontalValue;
-    [SerializeField] float _currentVerticalValue;
-    [SerializeField] float _detectionThresholdOffset;
+    [SerializeField] float _currentVerticalValue; 
 
 
 
@@ -29,6 +28,22 @@ public class GazeInputController : MonoBehaviour
         get
         {
             return _currentHorizontalValue;
+        } 
+    }
+
+    public float VerticalLookAtLimit
+    {
+        get
+        {
+            return _verticalLookAtLimit;
+        } 
+    }
+
+    public float HorizontalLookAtLimit
+    {
+        get
+        {
+            return _horizontalLookAtLimit;
         } 
     }
 

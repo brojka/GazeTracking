@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{CFA39803-63CF-6CF3-4A81-8AF12BA97CC9}</ProjectGuid>
+    <ProjectGuid>{D5B55891-5F49-1C79-0CE3-B6D4C23BD8D0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -23,7 +23,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_1_9;UNITY_2018_1;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_POST_PROCESSING_STACK_V2</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_1_9;UNITY_2018_1;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -61,6 +61,69 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Adam Interior Environment\Code\MainCamera.cs" />
+    <Compile Include="Assets\Adam Interior Environment\Features\AreaLight\Scripts\AreaLight.cs" />
+    <Compile Include="Assets\Adam Interior Environment\Features\AreaLight\Scripts\AreaLight.Direct.cs" />
+    <Compile Include="Assets\Adam Interior Environment\Features\AreaLight\Scripts\AreaLight.Shadow.cs" />
+    <Compile Include="Assets\Adam Interior Environment\Features\AreaLight\Scripts\AreaLightLUT.DisneyDiffuse.cs" />
+    <Compile Include="Assets\Adam Interior Environment\Features\AreaLight\Scripts\AreaLightLUT.GGX.cs" />
+    <Compile Include="Assets\Adam Interior Environment\Features\AreaLight\Scripts\AreaLightLUT.Load.cs" />
+    <Compile Include="Assets\Adam Interior Environment\Features\FreeCamera\FreeCamera.cs" />
+    <Compile Include="Assets\Adam Interior Environment\Features\LightManager\Scripts\LightManager.cs" />
+    <Compile Include="Assets\Adam Interior Environment\Features\LightManager\Scripts\LightManagerFogEllipsoids.cs" />
+    <Compile Include="Assets\Adam Interior Environment\Features\LightManager\Scripts\LightManagerFogLights.cs" />
+    <Compile Include="Assets\Adam Interior Environment\Features\LightOverride\LightOverride.cs" />
+    <Compile Include="Assets\Adam Interior Environment\Features\MinValueAttribute\MinValueAttribute.cs" />
+    <Compile Include="Assets\Adam Interior Environment\Features\PlaneReflection\PlaneReflection.cs" />
+    <Compile Include="Assets\Adam Interior Environment\Features\TubeLight\Scripts\TubeLight.cs" />
+    <Compile Include="Assets\Adam Interior Environment\Features\TubeLight\Scripts\TubeLightShadowPlane.cs" />
+    <Compile Include="Assets\Adam Interior Environment\Features\VolumetricFog\Scripts\FogEllipsoid.cs" />
+    <Compile Include="Assets\Adam Interior Environment\Features\VolumetricFog\Scripts\FogLight.cs" />
+    <Compile Include="Assets\Adam Interior Environment\Features\VolumetricFog\Scripts\FogLight.DirectionalShadow.cs" />
+    <Compile Include="Assets\Adam Interior Environment\Features\VolumetricFog\Scripts\VolumetricFog.cs" />
+    <Compile Include="Assets\Adam Interior Environment\Features\Wind\Scripts\Wind.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Components\BloomComponent.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Components\GrainComponent.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Components\TaaComponent.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Components\UserLutComponent.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Components\VignetteComponent.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Models\BloomModel.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Models\GrainModel.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Models\UserLutModel.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Models\VignetteModel.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\PostProcessingComponent.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\PostProcessingContext.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\PostProcessingModel.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\PostProcessingProfile.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Utils\ReflectionUtils.cs" />
+    <Compile Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+    <Compile Include="Assets\Adam Interior Environment\Tests\VFX\SceneCameraTheft.cs" />
     <Compile Include="Assets\Cinema Suite\Cinema Pro Cams\Camera Behaviours\Perlin.cs" />
     <Compile Include="Assets\Cinema Suite\Cinema Pro Cams\Camera Behaviours\ShakeCam.cs" />
     <Compile Include="Assets\Cinema Suite\Cinema Pro Cams\Image Effects (Pro Only)_CS\Cinema Suite\CSDOFScatter.cs" />
@@ -76,6 +139,7 @@
     <Compile Include="Assets\Cinema Suite\Cinema Pro Cams\Scripts\Stereo3DRenderer.cs" />
     <Compile Include="Assets\Scripts\GazeInputController.cs" />
     <Compile Include="Assets\Scripts\GazeReactionController.cs" />
+    <Compile Include="Assets\Scripts\HeadReactionController.cs" />
     <Compile Include="Assets\Visage Tracker\Jones\Scripts\EyeMovement.cs" />
     <Compile Include="Assets\Visage Tracker\Jones\Scripts\Movement.cs" />
     <Compile Include="Assets\Visage Tracker\Shared\Scripts\ActionUnitBinding.cs" />
@@ -88,21 +152,81 @@
     <Compile Include="Assets\Visage Tracker\Shared\Scripts\VisageTrackerNative.iOS.cs" />
     <Compile Include="Assets\Visage Tracker\Shared\Scripts\VisageTrackerNative.OSX.cs" />
     <Compile Include="Assets\Visage Tracker\Shared\Scripts\VisageTrackerNative.Windows.cs" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\DepthOfField.shader" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\LutGen.shader" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
+    <None Include="Assets\Adam Interior Environment\Features\TubeLight\Shaders\TubeLightAttenuation.cginc" />
     <None Include="Assets\Visage Tracker\Shared\Shaders\BGRATex.shader" />
+    <None Include="Assets\Adam Interior Environment\Features\VolumetricFog\Shaders\VolumetricFog.cginc" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
+    <None Include="Assets\Adam Interior Environment\Features\VolumetricFog\Shaders\Scatter.compute" />
     <None Include="Assets\Cinema Suite\Cinema Pro Cams\Image Effects (Pro Only)_CS\_Sources\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
     <None Include="Assets\StreamingAssets\Visage Tracker\bdtsdata\LBF\ye\landmarks.txt" />
+    <None Include="Assets\Adam Interior Environment\Features\Shared\AdamParticleAlphaBlend.shader" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\ACES.cginc" />
+    <None Include="Assets\Adam Interior Environment\Features\Shared\AdamStandardSpecular.shader" />
+    <None Include="Assets\Adam Interior Environment\Features\Shared\AdamPlaneReflectionsStandardSpecular.shader" />
     <None Include="Assets\Cinema Suite\Cinema Pro Cams\Image Effects (Pro Only)_CS\_Sources\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
     <None Include="Assets\Cinema Suite\Cinema Pro Cams\Lens Data\Resources\CinemaSuite_LensData.txt" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
+    <None Include="Assets\Adam Interior Environment\Features\VolumetricFog\Shaders\Debug.shader" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\Uber.shader" />
+    <None Include="Assets\Adam Interior Environment\Features\AreaLight\Shaders\AreaLight.shader" />
     <None Include="Assets\Visage Tracker\Jones\jones.bind.txt" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\Blit.shader" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\FXAA3.cginc" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\MotionBlur.shader" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
+    <None Include="Assets\Adam Interior Environment\Features\VolumetricFog\Shaders\BlurShadowmap.shader" />
+    <None Include="Assets\Adam Interior Environment\Features\VolumetricFog\Shaders\InjectLightingAndDensity.compute" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+    <None Include="Assets\Adam Interior Environment\Features\PlaneReflection\MaskPlane.shader" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\Common.cginc" />
+    <None Include="Assets\Adam Interior Environment\Features\PlaneReflection\Convolve.shader" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Editor Resources\UI\Trackball.shader" />
+    <None Include="Assets\Adam Interior Environment\Features\TubeLight\Shaders\TubeLight.shader" />
     <None Include="Assets\Visage Tracker\Jones\ogre.bind.txt" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\Bloom.cginc" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\TAA.shader" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\TAA.cginc" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
+    <None Include="Assets\Adam Interior Environment\Features\TubeLight\Shaders\TubeLight.cginc" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\GrainGen.shader" />
+    <None Include="Assets\Adam Interior Environment\Features\VolumetricFog\Shaders\Shadowmap.shader" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\FXAA.shader" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
+    <None Include="Assets\Adam Interior Environment\Features\Shared\UnityStandardInput.cginc" />
+    <None Include="Assets\Adam Interior Environment\Features\Shared\UnityStandardCore.cginc" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+    <None Include="Assets\Adam Interior Environment\Features\VolumetricFog\Shaders\CopyShadowParams.shader" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
     <None Include="Assets\Cinema Suite\Cinema Pro Cams\Shader\Stereo3D.shader" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\Bloom.shader" />
+    <None Include="Assets\Adam Interior Environment\license.txt" />
     <None Include="Assets\Visage Tracker\Jones\face.bind.txt" />
+    <None Include="Assets\Adam Interior Environment\Features\TubeLight\Shaders\TubeLightShadowPlanes.cginc" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
     <None Include="Assets\StreamingAssets\Visage Tracker\DefaultConfiguration.txt" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
+    <None Include="Assets\Adam Interior Environment\Features\PlaneReflection\DeferredApply.shader" />
+    <None Include="Assets\Adam Interior Environment\Features\VolumetricFog\Shaders\ApplyToOpaque.shader" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
+    <None Include="Assets\Adam Interior Environment\Features\AreaLight\Shaders\AreaLight.cginc" />
+    <None Include="Assets\Adam Interior Environment\Features\AreaLight\Shaders\AreaLightShadows.cginc" />
+    <None Include="Assets\Adam Interior Environment\PostProcessing\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>D:/Projekti/Head Tracking/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>D:/Projekti/GazeTracking/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/Projekti/Head Tracking/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/Projekti/GazeTracking/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.1.9f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
